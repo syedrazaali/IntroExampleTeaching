@@ -10,6 +10,24 @@
             text-align: center;
         }
 
+        .box {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+        }
+
+        .side-by-side {
+            display: inline-block;
+            width: 45%;
+            padding: 15px;
+            margin: 10px;
+            background-color: #e0f7fa;
+            border: 2px dashed #00796b;
+            vertical-align: top;
+        }
+
         img {
             width: 200px;
             border-radius: 50%;
@@ -52,26 +70,38 @@
 </head>
 <body>
 
-    <!-- Placeholder for profile picture -->
-    <img src="738448682.915102.jpg" alt="Your Photo">
+    <!-- Box 1: Profile Info -->
+    <div class="box">
+        <img src="738448682.915102.jpg" alt="Your Photo">
 
-    <h1>Raza Ali</h1>
+        <h1>Raza Ali</h1>
 
-    <p>
-        Salam Alaykum! I'm a middle school teacher and a software engineer. I love helping students learn how to code and build cool things with technology. I'm passionate about programming, education, and making complex topics easier to understand.
-    </p>
+        <p>
+            Salam Alaykum! I'm a middle school teacher and a software engineer. I love helping students learn how to code and build cool things with technology.
+        </p>
+    </div>
 
-    <p>Here are a few things I enjoy:</p>
-    <ul>
-        <li>Teaching students how to code</li>
-        <li>Solving technical challenges at work</li>
-        <li>Learning new programming languages</li>
-        <li>Exploring educational technology</li>
-    </ul>
+    <!-- Box 2: Interests -->
+    <div class="box">
+        <p>Here are a few things I enjoy:</p>
+        <ul>
+            <li>Teaching students how to code</li>
+            <li>Solving technical challenges at work</li>
+            <li>Learning new programming languages</li>
+            <li>Exploring educational technology</li>
+        </ul>
+    </div>
 
-    <p>Fun fact: I’ve worked on projects that combine science and code to help scientists do their work better!</p>
+    <!-- Box 3: Side-by-side layout demo -->
+    <div class="side-by-side">
+        <h3>Fun Fact</h3>
+        <p>I’ve worked on projects that combine science and code to help scientists do their work better!</p>
+    </div>
 
-    <a href="https://www.code.org/" target="_blank">Check out a great place to start coding</a>
+    <div class="side-by-side">
+        <h3>Want to Start Coding?</h3>
+        <a href="https://www.code.org/" target="_blank">Check out Code.org</a>
+    </div>
 
 </body>
 </html>
